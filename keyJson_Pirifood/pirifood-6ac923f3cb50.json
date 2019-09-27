@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "pirifood",
+  "private_key_id": "6ac923f3cb5050ae90db1fe7e7f48d6bb448e0e3",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDKOrOsnNO9wInI\n7mzmS7w+b36Ey+uswosFeQH9U8xaxzJqEVB7eib+s2Yocj4l8UgkXSwpGQKD04r3\n6eTwJ5/cQqXbdur79QhnxKlraj8mBLfliv1cm3yHAZw7CqKhNyv5t1CgSjv2QQMA\nnICt1bfNgORnmpQUW8lY6JNRF4u13DwWja4qNUhiT13DscNBHtRF1doLV4eCAVMI\nX4Nr3DAEybvNTTp7LT9sa4QU/LJt6MS8A0jPjfC4rkShcTBB5Li/tZWJf6lpXJa/\nVlh+Ue2KeLfo3iB4WWVcnav62JVtFnc2wTLuxhVNTtBKWPiZW9oadLUzgthNHwoo\nf+jUykRRAgMBAAECggEAROa1OvV/6yHDkDMz5U8ehwNDzwkPdiAeb7Hn7KD1emRu\nF9doXXmj+Zm0D8nExPatRr58AlCkG7ginA8T0oMdo1UN33Vn4Ip+36QQuSlM9K4c\n3dd6NWhAiFsTGMap3FXI5N8BWGuSfHdwB3BLI28ynZDxwR7Ynwsa0fED6FgmYMJa\nhR+VWy7vg4B3Wy2e30VooI5gNrezuQt4fkqMFLchpAgIdM9JaCdPCXUkP8C0pT5j\ny6vEvBMhAGK9aQvVc+Uuy96TNrdmZXuOHc5YN1wP19JlTeXfR/Z2tcpztGLy4s3D\nJlzZ7nISOSRsi1n0pRlSCx9eFlVu/ooi2ZNg3EZKlQKBgQDtGwb9H8uiRy/leiXu\nlp4IrJKEjljwcJWWYss0hM8GTAgaqHaWxE4+qpos/pmk2rRfkzPQ8sL59IAbZ0dD\nMtbJUIcdPN6IOQDaQVKLl8ySBNjM1OzNGmGsZuMa1EzH99GfQSF+b3J/5ibbCLjS\nX6SYaK9miLHyVLYAUSm/4SsNOwKBgQDaWDIh4Yl0u6ej52U3YVHBhXxrnU23Q7E4\nNPWD0lIHUzoTAPTKLI/KKfOT6Pal0XKACE/5R7pFKFFcVCnUHUCOcMhIPx3gx8am\ntGwKAwft1qfrWYVtZPD2QoTWNKEFYBMHchkvE6jUOmyOYmAGr1LD2bii24ZCC5zP\nPF/MBWQL4wKBgAE1WA3GMbV8A2R6AON8ZQXKS1zdlNp02G5RxpNX8e4oSQpJvYD7\nMyLin7KHAaVzb+PkzijMc+3uLxD0r8pJ4gpYnLerbb7n+3chShhoB6Te3XP9yc8p\nyUGlrJagalvCiZD0NgV87+py89O98aMw1ZfpQKuXGsEPaXYK89mEfkGtAoGBALjI\nIQ0pWPHQigwdHTykANOdC3Hre0TYZdeighDgYolOdvx0N7YNxlaZ8EjBxFMKkTMn\nVb8qY8p5V3mixI99fg/OBMGXoMqFZ2nXkQNcE07F9fAoH9I3tfFC1DaP7aGl8BTC\nC+waYCvTkeFiAdBGee3DiQ1SaSnlt/xuJMh923BvAoGAXDLXhfswUE454thYk8DG\nNn1o4h6g0+xom3utdVJ2s7RThz+mORWOJy/2HifRnxi9Ng8e1WAMNHu1yPB0svFK\nmFDFCfMNgt/reOnB3bzxipIuSUEPAvEimetVPOYX5WOIFEDRl06qklzlucVIHFZx\nTJ8SvhWm7tPjwQa3s6Yb/V8=\n-----END PRIVATE KEY-----\n",
+  "client_email": "pirifood-server@pirifood.iam.gserviceaccount.com",
+  "client_id": "110267200479643023686",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/pirifood-server%40pirifood.iam.gserviceaccount.com"
+}

@@ -1,7 +1,12 @@
 from django.conf import settings
 from django.db import models
+from gdstorage.storage import GoogleDriveStorage
+
+# Define Google Drive Storage
+gd_storage = GoogleDriveStorage()
 
 class Categoria(models.Model):
+
     nome_categoria  = models.CharField(max_length=200)
     ativo_categoria = models.BooleanField(default=True)
 
@@ -9,23 +14,20 @@ class Categoria(models.Model):
         return 'Categoria: {}'.format(self.nome_categoria)
 
 class Estabelecimento(models.Model):
-    nome_estabelecimento                = models.CharField(max_length=200)
-    categoria_estabelecimento           = models.ForeignKey(Categoria, on_delete=models.CASCADE)
-    longitude_estabelecimento           = models.DecimalField(max_digits=22, decimal_places=16, default=0.0)
-    latitude_estabelecimento            = models.DecimalField(max_digits=22, decimal_places=16, default=0.0)
-    logradouro_estabelecimento          = models.CharField(max_length=200,default='')
-    numero_logradouro_estabelecimento   = models.CharField(max_length=200,default='')
-    bairro_estabelecimento              = models.CharField(max_length=200,default='')
-    telefone_estabelecimento            = models.CharField(max_length=14,default='')
+    nome_estabelecimento                = models.CharField(max_length=200, blank=False, null=False)
+    categoria_estabelecimento           = models.ForeignKey(Categoria, on_delete=models.CASCADE, blank=False, null=False)
+    longitude_estabelecimento           = models.DecimalField(max_digits=22, decimal_places=8, blank=False, null=False)
+    latitude_estabelecimento            = models.DecimalField(max_digits=22, decimal_places=8, blank=False, null=False)
+    logradouro_estabelecimento          = models.CharField(max_length=200, blank=False, null=False)
+    numero_logradouro_estabelecimento   = models.CharField(max_length=200, blank=False, null=False)
+    bairro_estabelecimento              = models.CharField(max_length=200, blank=False, null=False)
+    telefone_estabelecimento            = models.CharField(max_length=14, blank=False, null=False)
     ativo_estabelecimento               = models.BooleanField(default=True)
+    main_Picture_estabecimento          = models.ImageField(upload_to='estabelecimentoImagens/', storage=gd_storage, blank=False, null=False)
+    picture01_estabecimento             = models.ImageField(upload_to='estabelecimentoImagens/', storage=gd_storage, blank=True, null=True)
+    picture02_estabecimento             = models.ImageField(upload_to='estabelecimentoImagens/', storage=gd_storage, blank=True, null=True)
+    picture03_estabecimento             = models.ImageField(upload_to='estabelecimentoImagens/', storage=gd_storage, blank=True, null=True)
+    picture04_estabecimento             = models.ImageField(upload_to='estabelecimentoImagens/', storage=gd_storage, blank=True, null=True)
 
     def __str__(self):
         return 'Estabelecimento: {}'.format(self.nome_estabelecimento)
-
-class ImagemEstabelecimento(models.Model):
-    url_imagemEstab             =  models.CharField(max_length=200)
-    estabecimento_imagemEstab   = models.ForeignKey(Estabelecimento, on_delete=models.CASCADE)
-    ativo_imagemEstab           = models.BooleanField(default=True)
-
-    def __str__(self):
-        return 'ImagemEstabelecimento: {}'.format(self.nome_estabelecimento)

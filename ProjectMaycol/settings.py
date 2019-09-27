@@ -37,6 +37,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # Third part
+
+    'gdstorage',
+    'rest_framework',
+
+    # My Own
+
     'piripirifood',
 ]
 
@@ -119,4 +127,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+
+GOOGLE_DRIVE_STORAGE_JSON_KEY_FILE = BASE_DIR + '\\keyJson_Pirifood\\pirifood-6ac923f3cb50.json'
