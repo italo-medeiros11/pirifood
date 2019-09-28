@@ -62,6 +62,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'ProjectMaycol.urls'
 
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -128,8 +129,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
+# STATIC_URL = '/static/'
+
+ALLOWED_HOSTS = []
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 GOOGLE_DRIVE_STORAGE_JSON_KEY_FILE = BASE_DIR + '\\keyJson_Pirifood\\pirifood-6ac923f3cb50.json'
